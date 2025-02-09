@@ -1,2 +1,0 @@
-# Legionware
-Script hub

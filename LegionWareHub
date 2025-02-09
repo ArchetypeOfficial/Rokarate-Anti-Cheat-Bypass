@@ -1,0 +1,73 @@
+-- New draggable Orion Lib script for hub creations!
+local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/WRUyYTdY')))()
+
+
+local Window = OrionLib:MakeWindow({
+    Name = "LegionWare",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "LegionHub" -- Put the name of your hub or script here!
+})
+
+print("Successfully executed.") -- Just a debug
+
+local Tab = Window:MakeTab({
+    Name = "OnTop",
+    Icon = "rbxassetid://1",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "OnTop"
+})
+
+local playerName = game.Players.LocalPlayer.Name
+
+Tab:AddButton({
+    Name = "Wassup Bitch " .. playerName .. " Hello Nigga",
+    Callback = function()
+    end
+})
+
+Tab:AddButton({
+    Name = "AdonisBypasser",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua'))()
+  end    
+})
+
+Tab:AddButton({
+    Name = "AntiKick1",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/raavenkkj/anti-kick/main/anti-kick.lua"))()
+getgenv().AntiKick = true -- Optional
+getgenv().Notifications = true -- Optional
+  end    
+})
+
+Tab:AddButton({
+    Name = "AntiKick2",
+    Callback = function()
+        getgenv().AntiKick = true -- Optional
+local plr = game:GetService("Players").LocalPlayer
+
+getgenv().Anti = true -- Re-Execute if you change it
+
+local Anti
+Anti = hookmetamethod(game, "__namecall", function(self, ...)
+        if self == plr and getnamecallmethod():lower() == "kick" and getgenv().Anti then
+            return warn("[ANTI-KICK] Client Tried To Call Kick Function On LocalPlayer")
+        end
+        return Anti(self, ...)
+    end)
+  end    
+})
+
+Tab:AddButton({
+    Name = "Dex Explorer",
+    Callback = function()
+        local __function = loadstring(game:HttpGet("https://github.com/Hosvile/DEX-Explorer/releases/latest/download/main.lua", true))
+ 
+__function(__function)
+  end    
+})
