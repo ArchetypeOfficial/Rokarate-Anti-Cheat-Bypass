@@ -1,6 +1,6 @@
-Execute the anti cheats first.
-then run the dex explorer, dupe benchpressclient on PlayerScript.
+Execute all the anti cheats first.
+run the dex explorer, dupe benchpressclient on PlayerScripts.
 each dupe = x2 gain.
 
 
-- bypassed anti dupe by arch
+- Anti dupe bypassed by kazeo
